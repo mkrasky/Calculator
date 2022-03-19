@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Util */
+
+.btn-light {
+    background: #d5d5d5;
+    padding: 5px 10px;
+    border: #777 1px solid;
+    width: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn-light:hover {
+    background: #afafaf;
+}
+
+.btn-primary {
+    background: #0e8dbe;
+    padding: 5px 10px;
+    border: #333 1px solid;
+    width: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn-primary:hover {
+    background: #0b698f;
+}
+
+.btn-dark {
+    background: #999;
+    padding: 5px 10px;
+    border: #333 1px solid;
+    width: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn-dark:hover {
+    background: #6d6d6d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    width: 800px;
+    height: 400px;
+    background: #c7c7c7;
+    margin: 10px;
+    border: #333 1px solid;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#equation-holder {
+    height: 50%;
+    color: #525252;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#current-input {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
+.plus {grid-area: plus;}
+.minus {grid-area: minus;}
+.multiply {grid-area: mult;}
+.divide {grid-area: divide;}
+.one {grid-area: one;}
+.two {grid-area: two;}
+.three {grid-area: three;}
+.four {grid-area: four;}
+.five {grid-area: five;}
+.six {grid-area: six;}
+.seven {grid-area: seven;}
+.eight {grid-area: eight;}
+.nine {grid-area: nine;}
+.zero {grid-area: zed;}
+.enter {grid-area: enter;}
+.decimal {grid-area: dec;}
+.clear {grid-area: clear;}
+.bksp {grid-area: bksp;}
+
+.button-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: 10px;
+    width: 800px;
+
+    grid-template: 
+        'plus minus mult divide'
+        'seven eight nine bksp'
+        'four five six clear'
+        'one two three enter'
+        'zed zed dec enter';
+}

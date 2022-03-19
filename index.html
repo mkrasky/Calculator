@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen" id="screen">
+            <div id="equation-holder"></div>
+            <div id="current-input"></div>
+        </div>
+
+        <div class="button-container">
+            
+            <button class="plus btn-primary" onclick="plus()">+</button>
+            <button class="minus btn-primary" onclick="minus()">-</button>
+            <button class="multiply btn-primary" onclick="multi()">*</button>
+            <button class="divide btn-primary" onclick="divide()">/</button>
+            
+            
+            
+            <button class="seven btn-light" onclick="seven()">7</button>
+            <button class="eight btn-light" onclick="eight()">8</button>
+            <button class="nine btn-light" onclick="nine()">9</button>
+            <button class="four btn-light" onclick="four()">4</button>
+            <button class="five btn-light" onclick="five()">5</button>
+            <button class="six btn-light" onclick="six()">6</button>
+            <button class="one btn-light" onclick="one()">1</button>
+            <button class="two btn-light" onclick="two()">2</button>
+            <button class="three btn-light" onclick="three()">3</button>
+            <button class="zero btn-light" onclick="zero()">0</button>
+            <button class="decimal btn-light" onclick="dec()">.</button>
+            
+            <button class="bksp btn-primary" onclick="backspace()">Backspace</button>
+            <button class="clear btn-dark" onclick="clearAll()">Clear All</button>
+            <button class="enter btn-dark" onclick="enter()">Enter</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
